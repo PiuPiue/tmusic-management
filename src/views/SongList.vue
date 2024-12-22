@@ -101,17 +101,29 @@
           label="创建时间"
           width="180"
         />
+         <!-- 喜欢人数列 -->
+         <el-table-column
+          prop="like_count" 
+          label="喜欢人数"
+          width="100"
+        />  
         <!-- 操作列 -->
         <el-table-column
           label="操作"
-          width="200"
+          width="300"
         >
           <template #default="scope">
-            <el-button size="mini">添加</el-button>
             <el-button
               size="mini"
               @click="handleEdit(scope.row)"
             >编辑</el-button>
+            
+            <el-button
+              size="mini"
+              type="edit"
+              @click="handleDelete(scope.row)"
+            >歌曲变更</el-button>
+
             <el-button
               size="mini"
               type="danger"

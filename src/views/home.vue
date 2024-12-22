@@ -2,7 +2,7 @@
     <div>
       <!-- 顶部导航栏 -->
       <div class="top-bar">
-        欢迎来到 T-music 后台管理
+        
       </div>
   
       <!-- 主体内容 -->
@@ -52,11 +52,13 @@
         isCollapsed: false, // 控制侧边栏折叠状态
         menuItems: [
             { path: '/home/tmusic', label: '首页', icon: '&#xe60f;', type: 'font-awesome' },
+            { path: '/home/log', label: '服务监控', icon: '&#xe606;', type: 'font-awesome' },
             { path: '/home/playlist', label: '歌单管理', icon: '&#xe703;', type: 'iconfont' },
             { path: '/home/song', label: '歌曲管理', icon: '&#xe613;', type: 'iconfont' },
-            { path: '/home/lyric', label: '歌手管理', icon: '&#xe74e;', type: 'font-awesome' },
+            { path: '/home/singer', label: '歌手管理', icon: '&#xe74e;', type: 'font-awesome' },
             { path: '/home/user', label: '用户管理', icon: '&#xe604;', type: 'iconfont' },
             { path: '/home/log', label: '查看日志', icon: '&#xe606;', type: 'font-awesome' },
+            { path: '/home/log', label: '相关脚本', icon: '&#xe606;', type: 'font-awesome' }
       ],
 
       };
@@ -80,7 +82,8 @@ body {
 /* 顶部导航栏 */
 .top-bar {
   height: 60px;
-  background-color: #5DADE2; /* 清新蓝色 */
+  background-color: #5DADE2; 
+  /* background-color: #2C3E50; */
   color: #fff;
   line-height: 60px;
   font-size: 24px;
